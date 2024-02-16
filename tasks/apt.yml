@@ -1,0 +1,7 @@
+- name: Install zlib1g
+  become: true
+  apt:
+    name: [zlib1g]
+  tags:
+    - install
+    - python
