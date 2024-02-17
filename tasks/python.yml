@@ -4,13 +4,13 @@
   tags:
     - install
     - python
-# - name: add pyenv pyenv root
-#   shell: PYENV_ROOT="$HOME/.pyenv
-#   tags:
-#     - install
-#     - python
-# - name: add pyenv path
-#   shell: PATH="$PYENV_ROOT/bin:$PATH
-#   tags:
-#     - install
-#     - python
+- name: add pyenv pyenv root
+  shell: PYENV_ROOT="$HOME/.pyenv"
+  tags:
+    - install
+    - python
+- name: add pyenv path
+  shell: PATH="$PYENV_ROOT/bin:$PATH"
+  tags:
+    - install
+    - python
