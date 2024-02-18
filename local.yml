@@ -14,5 +14,5 @@
       - install
       - core
   tasks:
-    - include: tasks/apt.yml
+    - include: tasks/ssh.yml
     - include: tasks/python.yml
