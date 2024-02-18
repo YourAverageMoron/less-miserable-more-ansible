@@ -21,7 +21,7 @@
     - ssh
 - name: Install ssh key public
   copy:
-    src: "./ssh/id_personal"
+    src: "./ssh/id_personal.pub"
     dest: "{{ lookup('env', 'HOME') }}/.ssh/id_personal.pub"
     mode: 0644
   tags:
