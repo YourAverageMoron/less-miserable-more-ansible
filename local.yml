@@ -15,4 +15,4 @@
       - core
   tasks:
     - include: tasks/ssh.yml
-    - include: tasks/python.yml
+    # - include: tasks/python.yml
