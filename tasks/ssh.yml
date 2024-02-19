@@ -58,27 +58,8 @@
     - ssh
 - name: Install all ssh keys
   copy:
-    src: "$HOME/personal/keep-your-secrets/ssh/!(*@(config|.pub))"
+    src: "$HOME/personal/keep-your-secrets/ssh/"
     dest: "{{ lookup('env', 'HOME') }}/.ssh/"
-    mode: 0600
-  tags:
-    - dotfiles
-    - install
-    - ssh
-- name: Install all ssh keys public
-  copy:
-    src: "$HOME/personal/keep-your-secrets/ssh/*.pub"
-    dest: "{{ lookup('env', 'HOME') }}/.ssh/"
-    mode: 0644
-  tags:
-    - dotfiles
-    - install
-    - ssh
-- name: Install all ssh keys public
-  copy:
-    src: "$HOME/personal/keep-your-secrets/ssh/config"
-    dest: "{{ lookup('env', 'HOME') }}/.ssh/config"
-    mode: 0644
   tags:
     - dotfiles
     - install
