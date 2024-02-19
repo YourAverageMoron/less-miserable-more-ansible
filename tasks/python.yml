@@ -18,8 +18,16 @@
   tags:
     - install
     - python
+- name: Check that the python exists
+  stat:
+    path: $HOME/.pyenv/versions/3.10.13
+  register: python_stats
+  tags:
+    - install
+    - python
 - name: Install python
-  shell: pyenv install 3.10 && pyenv global 3.10
+  shell: pyenv install 3.10.13 && pyenv global 3.10.13
+  when: python_stats.stat.exists == False
   tags:
     - install
     - python
