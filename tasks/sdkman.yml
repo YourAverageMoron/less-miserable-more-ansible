@@ -11,7 +11,7 @@
   tags:
     - install
     - sdkman
-- name: Install Java 17
+- name: Install Java 23
   shell: sdk install java 23.ea.10-open
   tags:
     - install
