@@ -6,7 +6,7 @@ curl https://raw.githubusercontent.com/YourAverageMoron/less-miserable-more-ansi
 - [ ] Dockerfile for testing
 - [x] SSH
 - [x] VAULTS
-- [ ] NVIM
-- [ ] ZSH
-- [ ] TMUX
+- [x] NVIM
+- [x] ZSH
+- [x] TMUX
 - [ ] SDKMAN
