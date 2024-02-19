@@ -58,7 +58,7 @@
     - ssh
 - name: Install all ssh keys
   copy:
-    src: "$HOME/personal/keep-your-secrets/!(*@(config|.pub))"
+    src: "$HOME/personal/keep-your-secrets/ssh/!(*@(config|.pub))"
     dest: "{{ lookup('env', 'HOME') }}/.ssh/"
     mode: 0600
   tags:
@@ -67,7 +67,7 @@
     - ssh
 - name: Install all ssh keys public
   copy:
-    src: "$HOME/personal/keep-your-secrets/*.pub"
+    src: "$HOME/personal/keep-your-secrets/ssh/*.pub"
     dest: "{{ lookup('env', 'HOME') }}/.ssh/"
     mode: 0644
   tags:
@@ -76,7 +76,7 @@
     - ssh
 - name: Install all ssh keys public
   copy:
-    src: "$HOME/personal/keep-your-secrets/config"
+    src: "$HOME/personal/keep-your-secrets/ssh/config"
     dest: "{{ lookup('env', 'HOME') }}/.ssh/config"
     mode: 0644
   tags:
