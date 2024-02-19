@@ -1,3 +1,7 @@
+- name: Ensure .ssh directory exists.
+  file:
+    dest: "{{ lookup('env', 'HOME') }}/personal"
+    state: directory 
 - name: Installing stow
   apt: name=stow
   tags:
