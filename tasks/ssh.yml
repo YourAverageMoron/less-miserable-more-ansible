@@ -58,7 +58,7 @@
     - ssh
 - name: Install all ssh keys
   copy:
-    src: "$HOME/personal/keep-your-secrets/ssh/"
+    src: "{{ lookup('env', 'HOME') }}/personal/keep-your-secrets/ssh/"
     dest: "{{ lookup('env', 'HOME') }}/.ssh/"
   tags:
     - dotfiles
