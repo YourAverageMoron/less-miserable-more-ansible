@@ -1,0 +1,13 @@
+# - name: Check that the pyenv exists
+#   stat:
+#     path: $HOME/.pyenv
+#   register: pyenv_stats
+#   tags:
+#     - install
+#     - python
+- name: Install sdkman
+  shell: curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh"
+  # when: pyenv_stats.stat.exists == False
+  tags:
+    - install
+    - sdkman
