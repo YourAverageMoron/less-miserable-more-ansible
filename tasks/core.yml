@@ -1,7 +1,7 @@
 - name: Install packages
   become: true
   apt:
-    name: [ "build-essential" ]
+    name: [ "build-essential", "zlib1g-dev" ]
   tags:
     - install
     - productivity
