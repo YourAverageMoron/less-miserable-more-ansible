@@ -1,4 +1,4 @@
-- name: Check that the pyenv exists
+- name: Check that the SDKMAN exists
   stat:
     path: $HOME/.sdkman
   register: sdkman_stats
