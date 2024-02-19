@@ -1,0 +1,24 @@
+- name: Installing stow
+  apt: name=stow
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Cloning connect my dots
+  ansible.builtin.git:
+    repo: 'git@github.com:YourAverageMoron/connect-my-dots.git'
+    dest: "{{ lookup('env', 'HOME') }}/personal/connect-my-dots"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: main
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Stow dotfiles
+  shell: cd $HOME/personal/connect-my-dots && stow --target=$HOME
+  tags:
+    - install
+    - dotfiles
+    - stow
