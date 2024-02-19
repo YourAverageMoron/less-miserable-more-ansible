@@ -19,6 +19,7 @@
     - include: tasks/nvm.yml
     - include: tasks/sdkman.yml
     - include: tasks/python.yml
+    - include: tasks/rust.yml
     - include: tasks/dotfiles.yml
     - include: tasks/zsh.yml
     - include: tasks/tools.yml
