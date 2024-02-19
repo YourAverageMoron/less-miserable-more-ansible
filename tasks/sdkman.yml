@@ -6,7 +6,7 @@
     - install
     - sdkman
 - name: Install sdkman
-  shell: curl -s "https://get.sdkman.io" | bash && source "$HOME/.sdkman/bin/sdkman-init.sh" > /dev/null 2>&1
+  shell: curl -s "https://get.sdkman.io" | bash > /dev/null 2>&1 && source "$HOME/.sdkman/bin/sdkman-init.sh" 
   # when: sdkman_stats.stat.exists == False
   tags:
     - install
