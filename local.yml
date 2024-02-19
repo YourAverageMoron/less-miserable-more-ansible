@@ -16,6 +16,7 @@
   tasks:
     - include: tasks/core.yml
     - include: tasks/ssh.yml
+    - include: tasks/nvm.yml
     - include: tasks/sdkman.yml
     - include: tasks/python.yml
     - include: tasks/dotfiles.yml
