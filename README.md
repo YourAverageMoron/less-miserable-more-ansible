@@ -1,7 +1,7 @@
 ## TODO 
 - [ ] Dockerfile for testing
-- [ ] SSH
-- [ ] VAULTS
+- [x] SSH
+- [x] VAULTS
 - [ ] NVIM
 - [ ] ZSH
 - [ ] TMUX
