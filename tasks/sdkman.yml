@@ -11,7 +11,7 @@
   tags:
     - install
     - sdkman
-- name: Install sdkman
+- name: Source sdkman
   shell: source "$HOME/.sdkman/bin/sdkman-init.sh" 
   tags:
     - install
