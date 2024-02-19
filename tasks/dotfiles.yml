@@ -22,7 +22,7 @@
     - dotfiles
     - stow
 - name: Stow dotfiles
-  shell: cd $HOME/personal/connect-my-dots &&stow --adopt --target=$HOME . && git restore .
+  shell: cd $HOME/personal/connect-my-dots && sh install.sh
   tags:
     - install
     - dotfiles
