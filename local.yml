@@ -19,3 +19,4 @@
     - include: tasks/dotfiles.yml
     - include: tasks/zsh.yml
     - include: tasks/tools.yml
+    - include: tasks/nvim.yml
