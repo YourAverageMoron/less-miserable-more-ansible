@@ -5,8 +5,16 @@
   tags:
     - install
     - python
+- name: Check that the pyenv exists
+  stat:
+    path: $HOME/.pyenv
+  register: pyenv_stats
+  tags:
+    - install
+    - python
 - name: Install pyenv
   shell: curl https://pyenv.run | bash
+  when: pyenv_stats.stat.exists == False
   tags:
     - install
     - python
