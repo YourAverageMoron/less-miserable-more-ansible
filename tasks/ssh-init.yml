@@ -28,3 +28,11 @@
     - dotfiles
     - install
     - ssh
+- name: Set temporary ssh config
+  copy:
+    src: "./ssh/config"
+    dest: "{{ lookup('env', 'HOME') }}/.ssh/config"
+  tags:
+    - dotfiles
+    - install
+    - ssh
