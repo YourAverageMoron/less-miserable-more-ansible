@@ -4,4 +4,4 @@
     name: [ "build-essential", "zlib1g-dev" ]
   tags:
     - install
-    - productivity
+    - core
