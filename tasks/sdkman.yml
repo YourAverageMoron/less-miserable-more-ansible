@@ -11,13 +11,13 @@
   tags:
     - install
     - sdkman
-- name: Source sdkman
-  shell: . "$HOME/.sdkman/bin/sdkman-init.sh" 
-  tags:
-    - install
-    - sdkman
-- name: Install Java 23
-  shell: sdk install java 23.ea.10-open
-  tags:
-    - install
-    - sdkman
+# - name: Source sdkman
+#   shell: . "$HOME/.sdkman/bin/sdkman-init.sh" 
+#   tags:
+#     - install
+#     - sdkman
+# - name: Install Java 23
+#   shell: sdk install java 23.ea.10-open
+#   tags:
+#     - install
+#     - sdkman
