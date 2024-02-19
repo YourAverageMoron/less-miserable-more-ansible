@@ -18,4 +18,8 @@
   tags:
     - install
     - python
-  
+- name: Install python
+  shell: pyenv install 3.10.4
+  tags:
+    - install
+    - python
