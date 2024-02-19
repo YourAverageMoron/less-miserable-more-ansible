@@ -1,7 +1,7 @@
 - name: Install packages
   become: true
   apt:
-    name: [ "build-essential", "zlib1g-dev" ]
+    name: [ "build-essential", "zlib1g-dev", "libssl-dev" ]
   tags:
     - install
     - core
