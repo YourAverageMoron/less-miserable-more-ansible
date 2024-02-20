@@ -15,4 +15,4 @@
     name: ["libaio1"]
   tags:
     - install
-    - python
+    - oracle-instant-client
