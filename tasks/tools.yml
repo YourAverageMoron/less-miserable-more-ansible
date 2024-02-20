@@ -7,9 +7,5 @@
     - productivity
 - name: Install tmux package manager
   ansible.builtin.git:
-    repo: 'clone https://github.com/tmux-plugins/tpm'
+    repo: "https://github.com/tmux-plugins/tpm"
     dest: "{{ lookup('env', 'HOME') }}/.tmux/plugins/tpm"
-    recursive: yes
-    update: yes
-    accept_hostkey: yes
-    version: master
