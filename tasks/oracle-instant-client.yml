@@ -9,3 +9,10 @@
   tags:
     - install
     - oracle-instant-client
+- name: Install zlib1g
+  become: true
+  apt:
+    name: ["libaio1"]
+  tags:
+    - install
+    - python
