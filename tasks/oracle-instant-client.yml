@@ -1,0 +1,9 @@
+- name: Ensure /opt/oracle
+  file:
+    dest: "/opt/oracle"
+    state: directory
+- name: Download instant client package
+  shell: "cd /opt/oracle && curl -o instant-client.zip https://download.oracle.com/otn_software/linux/instantclient/2113000/instantclient-basic-linux.x64-21.13.0.0.0dbru.zip && unzip instant-client.zip && rm -rf instant-client.zip"
+  tags:
+    - install
+    - oracle-instant-client
