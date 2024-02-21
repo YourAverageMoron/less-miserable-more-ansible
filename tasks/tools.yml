@@ -9,3 +9,8 @@
   ansible.builtin.git:
     repo: "https://github.com/tmux-plugins/tpm"
     dest: "{{ lookup('env', 'HOME') }}/.tmux/plugins/tpm"
+- Install zoxide:
+  shell: curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+  tags:
+    - install
+    - productivity
