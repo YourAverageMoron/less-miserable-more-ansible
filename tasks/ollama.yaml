@@ -1,0 +1,6 @@
+- name: Install pyenv
+  shell: curl -fsSL https://ollama.com/install.sh | sh
+  become: true
+  tags:
+    - install
+    - ollama
