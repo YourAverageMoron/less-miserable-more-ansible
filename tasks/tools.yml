@@ -1,7 +1,7 @@
 - name: Install packages
   become: true
   apt:
-    name: [ "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel", "kafkacat" ]
+    name: [ "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel" ]
   tags:
     - install
     - productivity
