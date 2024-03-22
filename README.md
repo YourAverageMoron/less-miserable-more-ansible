@@ -16,3 +16,8 @@ add this command
 mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ```
+
+
+# Setup Mac
+- [ ] Remove zsh install but keep oh my zsh
+- [ ] 
