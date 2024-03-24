@@ -20,4 +20,4 @@ poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
 # Setup Mac
 - [ ] Remove zsh install but keep oh my zsh
-- [ ] 
+- [ ] Can we install Arc and Obsidian through this?
