@@ -10,6 +10,7 @@
     - import_tasks: tasks/sdkman.yml
     - import_tasks: tasks/python.yml
     - import_tasks: tasks/rust.yml
+    - import_tasks: tasks/go.yml
     - import_tasks: tasks/zsh.yml
     - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/iterm.yml
