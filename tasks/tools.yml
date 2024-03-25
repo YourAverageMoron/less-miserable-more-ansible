@@ -1,10 +1,3 @@
-- name: Install packages
-  become: true
-  apt:
-    name: [ "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel" ]
-  tags:
-    - install
-    - productivity
 - name: Install tmux package manager
   ansible.builtin.git:
     repo: "https://github.com/tmux-plugins/tpm"
