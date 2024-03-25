@@ -2,13 +2,6 @@
   file:
     dest: "{{ lookup('env', 'HOME') }}/personal"
     state: directory 
-- name: Installing stow
-  apt: name=stow
-  become: true
-  tags:
-    - install
-    - dotfiles
-    - stow
 - name: Cloning connect my dots
   ansible.builtin.git:
     repo: 'git@github.com:YourAverageMoron/connect-my-dots.git'
