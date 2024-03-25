@@ -1,0 +1,13 @@
+- name: Remove existing versions of go
+  shell: rm -rf /usr/local/go && rm -rf /etc/paths.d/go
+  tags: [ 'install', 'go']
+
+- name: Curl  go
+  shell: curl -o golang.pkg https://go.dev/dl/go1.22.1.darwin-amd64.pkg
+  tags: [ 'install', 'go']
+
+- name: Curl open go
+  shell: open golang.pkg
+  become: true
+  tags: [ 'install', 'go']
+
