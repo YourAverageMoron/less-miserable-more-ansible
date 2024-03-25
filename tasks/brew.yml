@@ -28,15 +28,6 @@
     - stow
     - brew
 
-- name: Install homebrew nvim packages
-  homebrew:
-    name: ["neovim"]
-    state: latest
-  tags:
-    - install
-    - nvim
-    - brew
-
 - name: Install homebrew nvm packages
   homebrew:
     name: ["nvm"]
