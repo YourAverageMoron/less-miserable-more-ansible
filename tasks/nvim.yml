@@ -1,14 +1,3 @@
-- name: Update Neovim apt repo
-  become: true
-  ansible.builtin.apt_repository:
-    repo: "ppa:neovim-ppa/unstable"
-- name: Install neovim packages
-  become: true
-  apt:
-    name: [ "neovim" ]
-  tags:
-    - install
-    - nvim
 - name: Get Packer
   ansible.builtin.git:
     repo: 'https://github.com/wbthomason/packer.nvim'
