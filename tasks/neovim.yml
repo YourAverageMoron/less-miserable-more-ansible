@@ -1,3 +1,7 @@
+- name: Ensure apps directory exists.
+  file:
+    dest: "{{ lookup('env', 'HOME') }}/personal/apps"
+    state: directory 
 - name: Remove neovim
   shell: rm -rf ~/personal/apps/neovim
   tags:
