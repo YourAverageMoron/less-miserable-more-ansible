@@ -5,6 +5,7 @@
   tags:
     - install
     - core
+    - apt
 - name: Install ZSH
   apt: name=zsh
   become: true
@@ -16,10 +17,15 @@
     - install
     - dotfiles
     - stow
+    - apt
 - name: Update Neovim apt repo
   become: true
   ansible.builtin.apt_repository:
     repo: "ppa:neovim-ppa/unstable"
+  tags:
+    - install
+    - nvim
+    - apt
 - name: Install neovim packages
   become: true
   apt:
@@ -27,3 +33,20 @@
   tags:
     - install
     - nvim
+    - apt
+- name: Install zlib1g
+  become: true
+  apt:
+    name: [zlib1g, "libffi-dev", "liblzma-dev", "libbz2-dev", "libreadline-dev", "libpq-dev", "libsqlite3-dev", "python3-tk", "pipx"]
+  tags:
+    - install
+    - python
+    - apt
+- name: Install packages
+  become: true
+  apt:
+    name: [ "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel" ]
+  tags:
+    - install
+    - productivity
+    - apt
