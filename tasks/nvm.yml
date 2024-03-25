@@ -1,5 +1,7 @@
-- name: Install nvm
+
+- name: Install nvm ubuntu
   shell: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
   tags:
     - install
     - nvm
+    - ubuntu
