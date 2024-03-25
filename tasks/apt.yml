@@ -9,3 +9,21 @@
   apt: name=zsh
   become: true
   tags: &tags_for_zsh_tasks [ 'install', 'productivity', 'dotfiles', 'zsh' ]
+- name: Installing stow
+  apt: name=stow
+  become: true
+  tags:
+    - install
+    - dotfiles
+    - stow
+- name: Update Neovim apt repo
+  become: true
+  ansible.builtin.apt_repository:
+    repo: "ppa:neovim-ppa/unstable"
+- name: Install neovim packages
+  become: true
+  apt:
+    name: [ "neovim" ]
+  tags:
+    - install
+    - nvim
