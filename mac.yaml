@@ -5,3 +5,4 @@
     personal: "{{ lookup('env', 'HOME') }}/personal"
   tasks:
     - import_tasks: tasks/brew.yaml
+    - import_tasks: tasks/ssh.yaml
