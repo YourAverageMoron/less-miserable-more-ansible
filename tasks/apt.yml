@@ -1,0 +1,4 @@
+- name: Install ZSH
+  apt: name=zsh
+  become: true
+  tags: &tags_for_zsh_tasks [ 'install', 'productivity', 'dotfiles', 'zsh' ]
