@@ -7,3 +7,6 @@
     - import_tasks: tasks/brew.yml
     - import_tasks: tasks/ssh.yml
     - import_tasks: tasks/neovim.yml
+    - import_tasks: tasks/sdkman.yml
+    - import_tasks: tasks/python.yml
+    - import_tasks: tasks/rust.yml
