@@ -1,24 +1,24 @@
 - name: Remove neovim
-  shell: rm -rf ~/personal/neovim
+  shell: rm -rf ~/personal/apps/neovim
   tags:
     - install
     - neovim
 - name: Clone Neovim
   ansible.builtin.git:
     repo: 'https://github.com/neovim/neovim.git'
-    dest: "{{ lookup('env', 'HOME') }}/personal/neovim"
+    dest: "{{ lookup('env', 'HOME') }}/personal/apps/neovim"
     version: stable
   tags:
     - install
     - neovim
 - name: Build neovim
-  shell: "cd {{ lookup('env', 'HOME') }}/personal/neovim && make -j 20"
+  shell: "cd {{ lookup('env', 'HOME') }}/personal/apps/neovim && make -j 20"
   tags:
     - install
     - neovim
 - name: Install neovim
   become: true
-  shell: "cd {{ lookup('env', 'HOME') }}/personal/neovim && make install"
+  shell: "cd {{ lookup('env', 'HOME') }}/personal/apps/neovim && make install"
   tags:
     - install
     - neovim
