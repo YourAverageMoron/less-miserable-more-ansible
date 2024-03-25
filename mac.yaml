@@ -14,5 +14,4 @@
       - install
       - core
   tasks:
-    - include: tasks/core.yml
-    - include: tasks/ssh.yml
+    - include: tasks/brew.yaml
