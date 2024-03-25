@@ -50,3 +50,11 @@
     - install
     - productivity
     - apt
+- name: Install zlib1g
+  become: true
+  apt:
+    name: ["libaio1"]
+  tags:
+    - apt
+    - install
+    - oracle-instant-client
