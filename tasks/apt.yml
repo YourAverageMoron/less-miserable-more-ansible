@@ -18,22 +18,6 @@
     - dotfiles
     - stow
     - apt
-- name: Update Neovim apt repo
-  become: true
-  ansible.builtin.apt_repository:
-    repo: "ppa:neovim-ppa/unstable"
-  tags:
-    - install
-    - nvim
-    - apt
-- name: Install neovim packages
-  become: true
-  apt:
-    name: [ "neovim" ]
-  tags:
-    - install
-    - nvim
-    - apt
 - name: Install zlib1g
   become: true
   apt:
