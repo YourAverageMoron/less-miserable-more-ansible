@@ -1,1 +1,17 @@
-
+- name: Ensure apps directory exists.
+  file:
+    dest: "{{ lookup('env', 'HOME') }}/personal/apps"
+    state: directory 
+- name: Remove  catppuccin-iterm 
+  shell: rm -rf ~/personal/apps/catppuccin-iterm
+  tags:
+    - install
+    - iterm
+- name: Clone catppuccin-iterm
+  ansible.builtin.git:
+    repo: 'https://github.com/catppuccin/iterm.git'
+    dest: "{{ lookup('env', 'HOME') }}/personal/apps/catppuccin-iterm"
+    version: main
+  tags:
+    - install
+    - iterm
