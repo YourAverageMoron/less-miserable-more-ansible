@@ -48,7 +48,7 @@
 
 - name: Install homebrew cask packages
   homebrew:
-    name: ["homebrew/cask/arc", "homebrew/cask/obsidian", "homebrew/cask/docker"], 
+    name: ["homebrew/cask/arc", "homebrew/cask/obsidian", "homebrew/cask/docker", "homebrew/cask/iterm2"], 
     state: latest
   tags:
     - install
