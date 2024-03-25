@@ -3,9 +3,3 @@
     repo: "https://github.com/tmux-plugins/tpm"
     dest: "{{ lookup('env', 'HOME') }}/.tmux/plugins/tpm"
 
-# TODO THIS SHOULD ONLY RUN ON UBUNTU
-- Install zoxide:
-  shell: curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-  tags:
-    - install
-    - productivity
