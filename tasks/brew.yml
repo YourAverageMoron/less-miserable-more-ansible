@@ -10,7 +10,7 @@
 
 - name: Install homebrew packages
   homebrew:
-    name: ["tree", "tldr", "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel", "unzip", "openssl"]
+    name: ["tree", "tldr", "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel", "unzip", "openssl", "zoxide"]
     state: latest
   tags:
     - install
