@@ -37,6 +37,15 @@
     - nvm
     - brew
 
+- name: Install homebrew nvm packages
+  homebrew:
+    name: ["go"]
+    state: latest
+  tags:
+    - install
+    - go
+    - brew
+
 - name: Install homebrew python packages
   homebrew:
     name: ["pyenv", "pipx"]
