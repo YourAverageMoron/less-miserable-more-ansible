@@ -1,0 +1,26 @@
+- Install zoxide:
+  shell: curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+  tags:
+    - install
+    - productivity
+    - ubuntu
+
+- name: Check that the pyenv exists
+  stat:
+    path: $HOME/.pyenv
+  register: pyenv_stats
+  tags:
+    - install
+    - python
+- name: Install pyenv
+  shell: curl https://pyenv.run | bash
+  when: pyenv_stats.stat.exists == False
+  tags:
+    - install
+    - python
+- name: Install pyenv
+  shell: curl -fsSL https://ollama.com/install.sh | sh
+  become: true
+  tags:
+    - install
+    - ollama
