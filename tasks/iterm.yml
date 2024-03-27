@@ -15,9 +15,5 @@
   tags:
     - install
     - iterm
-- name: Get nerdfonts
-  shell: curl -sS https://webi.sh/nerdfont | sh
-  tags:
-    - install
-    - iterm
+
 

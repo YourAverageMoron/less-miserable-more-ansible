@@ -1,0 +1,5 @@
+- name: Get nerdfonts
+  shell: curl -sL https://firebase.tools | bash
+  tags:
+    - firebase
+    - gcp
