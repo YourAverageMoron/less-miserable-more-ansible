@@ -14,3 +14,4 @@
     - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/iterm.yml
     - import_tasks: tasks/nvm.yml
+    - import_tasks: tasks/gcp.yml
