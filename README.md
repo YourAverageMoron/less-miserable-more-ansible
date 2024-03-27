@@ -10,3 +10,10 @@ add this command
 mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ```
+
+
+
+## After run
+```
+firebase login
+```
