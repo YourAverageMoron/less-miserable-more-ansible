@@ -64,3 +64,5 @@
     - dotfiles
     - install
     - ssh
+- name: Sort out permissions
+  shell: cd {{ lookup('env', 'HOME') }}/.ssh/ && find . -name "id_*" -exec chmod 600 {} \; && find . -name "id_*.pub" -exec chmod 644 {} \;
