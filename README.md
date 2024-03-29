@@ -18,4 +18,5 @@ poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ## After run
 ```
 firebase login
+gcloud auth login
 ```
