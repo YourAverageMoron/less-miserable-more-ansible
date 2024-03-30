@@ -10,13 +10,25 @@
 
 - name: Install homebrew packages
   homebrew:
-    name: ["tree", "tldr", "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel", "unzip", "openssl", "zoxide", "cmake"]
+    name: 
+      - "tree"
+      - "tldr"
+      - "tmux"
+      - "wireshark"
+      - "fzf"
+      - "tldr"
+      - "ripgrep"
+      - "jq"
+      - "parallel"
+      - "unzip"
+      - "openssl"
+      - "zoxide"
+      - "cmake"
     state: latest
   tags:
     - install
     - core
     - brew
-
 
 - name: Install homebrew stow packages
   homebrew:
@@ -37,13 +49,22 @@
     - nvm
     - brew
 
-- name: Install homebrew nvm packages
+- name: Install homebrew go packages
   homebrew:
     name: ["go"]
     state: latest
   tags:
     - install
     - go
+    - brew
+
+- name: Install torso
+  homebrew:
+    name: ["tursodatabase/tap/turso"]
+    state: latest
+  tags:
+    - install
+    - torso
     - brew
 
 - name: Install homebrew python packages
