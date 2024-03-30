@@ -58,13 +58,13 @@
     - go
     - brew
 
-# - name: Tap a Homebrew repository, for cask-fonts
-#   community.general.homebrew_tap:
-#     name: tursodatabase/turso
-#   tags:
-#     - install
-#     - torso
-#     - brew
+- name: Tap a Homebrew repository, for cask-fonts
+  community.general.homebrew_tap:
+    name: tursodatabase/turso
+  tags:
+    - install
+    - torso
+    - brew
 
 - name: Install torso
   homebrew:
