@@ -61,7 +61,17 @@
 
 - name: Install homebrew cask packages
   homebrew:
-    name: ["homebrew/cask/arc", "homebrew/cask/obsidian", "homebrew/cask/docker", "homebrew/cask/iterm2", "homebrew/cask/postman", "homebrew/cask/whatsapp", "homebrew/cask/google-cloud-sdk", "font-jetbrains-mono"]
+    name:
+      - "homebrew/cask/arc"
+      - "homebrew/cask/obsidian"
+      - "homebrew/cask/docker"
+      - "homebrew/cask/iterm2"
+      - "homebrew/cask/postman"
+      - "homebrew/cask/whatsapp"
+      - "homebrew/cask/google-cloud-sdk"
+      - "homebrew/cask/discord"
+      - "homebrew/cask/slack"
+      - "font-jetbrains-mono"
     state: latest
   tags:
     - install
