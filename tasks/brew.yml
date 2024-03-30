@@ -60,7 +60,7 @@
 
 - name: Install torso
   homebrew:
-    name: ["tursodatabase/tap/turso"]
+    name: ["tursodatabase/turso"]
     state: latest
   tags:
     - install
