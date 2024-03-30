@@ -61,6 +61,10 @@
 - name: Tap a Homebrew repository, for cask-fonts
   community.general.homebrew_tap:
     name: tursodatabase/turso
+  tags:
+    - install
+    - torso
+    - brew
 
 - name: Install torso
   homebrew:
@@ -83,6 +87,10 @@
 - name: Tap a Homebrew repository, for cask-fonts
   community.general.homebrew_tap:
     name: homebrew/cask-fonts
+  tags:
+    - install
+    - cask
+    - brew
 
 - name: Install homebrew cask packages
   homebrew:
