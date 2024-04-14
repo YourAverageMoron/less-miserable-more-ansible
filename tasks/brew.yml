@@ -84,6 +84,15 @@
     - cask
     - brew
 
+- name: Install homebrew stow packages
+  homebrew:
+    name: ["postgresql"]
+    state: latest
+  tags:
+    - install
+    - db
+    - brew
+
 - name: Install homebrew cask packages
   homebrew:
     name:
