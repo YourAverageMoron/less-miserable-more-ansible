@@ -58,15 +58,6 @@
     - go
     - brew
 
-- name: Install torso
-  homebrew:
-    name: ["tursodatabase/tap/turso"]
-    state: latest
-  tags:
-    - install
-    - torso
-    - brew
-
 - name: Install homebrew python packages
   homebrew:
     name: ["pyenv", "pipx"]
@@ -76,21 +67,32 @@
     - python
     - brew
 
+- name: Install homebrew stow packages
+  homebrew:
+    name: ["postgresql", "tursodatabase/tap/turso"]
+    state: latest
+  tags:
+    - install
+    - db
+    - brew
+
+- name: Install homebrew cask packages
+  homebrew:
+    name:
+      - "homebrew/cask/snowflake-snowsql"
+    state: latest
+  tags:
+    - install
+    - cask
+    - brew
+    - db
+
 - name: Tap a Homebrew repository, for cask-fonts
   community.general.homebrew_tap:
     name: homebrew/cask-fonts
   tags:
     - install
     - cask
-    - brew
-
-- name: Install homebrew stow packages
-  homebrew:
-    name: ["postgresql"]
-    state: latest
-  tags:
-    - install
-    - db
     - brew
 
 - name: Install homebrew cask packages
