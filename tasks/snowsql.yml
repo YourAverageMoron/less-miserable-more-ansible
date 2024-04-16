@@ -1,0 +1,8 @@
+- name: Install all snowsql config 
+  copy:
+    src: "{{ lookup('env', 'HOME') }}/personal/keep-your-secrets/misc/snowsql_config"
+    dest: "{{ lookup('env', 'HOME') }}/.snowsql/config"
+  tags:
+    - dotfiles
+    - install
+    - snowsql
