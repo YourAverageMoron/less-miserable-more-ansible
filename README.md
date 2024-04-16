@@ -4,6 +4,8 @@ curl https://raw.githubusercontent.com/YourAverageMoron/less-miserable-more-ansi
 ```
 ## TODO 
 - [ ] Migrate from apt-get to brew on ubuntu?
+- [ ] Setup zotero
+- [ ] Setup Obsidian config?
 
 add this command
 ```
@@ -16,4 +18,5 @@ poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ## After run
 ```
 firebase login
+gcloud auth login
 ```

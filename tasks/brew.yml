@@ -10,13 +10,26 @@
 
 - name: Install homebrew packages
   homebrew:
-    name: ["tree", "tldr", "tmux", "wireshark", "fzf", "tldr", "ripgrep", "jq", "parallel", "unzip", "openssl", "zoxide", "cmake", "kind"]
+    name: 
+      - "tree"
+      - "tldr"
+      - "tmux"
+      - "wireshark"
+      - "fzf"
+      - "tldr"
+      - "ripgrep"
+      - "jq"
+      - "parallel"
+      - "unzip"
+      - "openssl"
+      - "zoxide"
+      - "cmake"
+      - "kind"
     state: latest
   tags:
     - install
     - core
     - brew
-
 
 - name: Install homebrew stow packages
   homebrew:
@@ -37,7 +50,7 @@
     - nvm
     - brew
 
-- name: Install homebrew nvm packages
+- name: Install homebrew go packages
   homebrew:
     name: ["go"]
     state: latest
@@ -55,13 +68,47 @@
     - python
     - brew
 
-- name: Tap a Homebrew repository, for cask-fonts
-  community.general.homebrew_tap:
-    name: homebrew/cask-fonts
+- name: Install homebrew stow packages
+  homebrew:
+    name: ["postgresql", "tursodatabase/tap/turso"]
+    state: latest
+  tags:
+    - install
+    - db
+    - brew
 
 - name: Install homebrew cask packages
   homebrew:
-    name: ["homebrew/cask/arc", "homebrew/cask/obsidian", "homebrew/cask/docker", "homebrew/cask/iterm2", "homebrew/cask/postman", "homebrew/cask/whatsapp", "font-jetbrains-mono"]
+    name:
+      - "homebrew/cask/snowflake-snowsql"
+    state: latest
+  tags:
+    - install
+    - cask
+    - brew
+    - db
+
+- name: Tap a Homebrew repository, for cask-fonts
+  community.general.homebrew_tap:
+    name: homebrew/cask-fonts
+  tags:
+    - install
+    - cask
+    - brew
+
+- name: Install homebrew cask packages
+  homebrew:
+    name:
+      - "homebrew/cask/arc"
+      - "homebrew/cask/obsidian"
+      - "homebrew/cask/docker"
+      - "homebrew/cask/iterm2"
+      - "homebrew/cask/postman"
+      - "homebrew/cask/whatsapp"
+      - "homebrew/cask/google-cloud-sdk"
+      - "homebrew/cask/discord"
+      - "homebrew/cask/slack"
+      - "font-jetbrains-mono"
     state: latest
   tags:
     - install
