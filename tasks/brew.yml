@@ -70,9 +70,8 @@
 
 - name: Tap a Homebrew repository, state present
   community.general.homebrew_tap:
-    name: 
-      - "tursodatabase/tap/turso"
-      - "supabase/tap/supabase"
+    name: "supabase/tap/supabase"
+    url: "https://github.com/supabase/homebrew-tap"
   tags:
     - install
     - db
