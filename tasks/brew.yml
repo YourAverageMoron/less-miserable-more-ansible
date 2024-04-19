@@ -73,6 +73,10 @@
     name: 
       - "tursodatabase/tap/turso"
       - "supabase/tap/supabase"
+  tags:
+    - install
+    - db
+    - brew
 
 - name: Install homebrew db packages
   homebrew:
