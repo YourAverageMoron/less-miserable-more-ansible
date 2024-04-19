@@ -73,7 +73,7 @@
     name: 
       - "postgresql"
       # - "tursodatabase/tap/turso"
-      - "supabase/tap/supabase"
+      # - "supabase/tap/supabase"
     state: latest
   tags:
     - install
