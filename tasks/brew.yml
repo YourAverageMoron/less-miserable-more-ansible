@@ -68,7 +68,13 @@
     - python
     - brew
 
-- name: Install homebrew stow packages
+- name: Tap a Homebrew repository, state present
+  community.general.homebrew_tap:
+    name: 
+      - "tursodatabase/tap/turso"
+      - "supabase/tap/supabase"
+
+- name: Install homebrew db packages
   homebrew:
     name: 
       - "postgresql"
