@@ -70,7 +70,10 @@
 
 - name: Install homebrew stow packages
   homebrew:
-    name: ["postgresql", "tursodatabase/tap/turso", "supabase/tap/supabase"]
+    name: 
+      - "postgresql"
+      # - "tursodatabase/tap/turso"
+      - "supabase/tap/supabase"
     state: latest
   tags:
     - install
