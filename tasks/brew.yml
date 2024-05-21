@@ -25,6 +25,7 @@
       - "zoxide"
       - "cmake"
       - "kind"
+      - "websocat"
     state: latest
   tags:
     - install
