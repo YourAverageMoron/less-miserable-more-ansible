@@ -26,6 +26,7 @@
       - "cmake"
       - "kind"
       - "websocat"
+      - "kcat"
     state: latest
   tags:
     - install
