@@ -107,7 +107,6 @@
       - "homebrew/cask/arc"
       - "homebrew/cask/obsidian"
       - "homebrew/cask/docker"
-      - "homebrew/cask/iterm2"
       - "homebrew/cask/postman"
       - "homebrew/cask/whatsapp"
       - "homebrew/cask/google-cloud-sdk"
