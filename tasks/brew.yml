@@ -45,7 +45,7 @@
 
 - name: Install homebrew nvm packages
   homebrew:
-    name: ["nvm"]
+    name: ["nvm", "corepack"]
     state: latest
   tags:
     - install
