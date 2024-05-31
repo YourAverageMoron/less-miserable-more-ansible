@@ -113,6 +113,7 @@
       - "homebrew/cask/google-cloud-sdk"
       - "homebrew/cask/discord"
       - "homebrew/cask/slack"
+      - "homebrew/cask/alacritty"
       - "font-jetbrains-mono"
     state: latest
   tags:
