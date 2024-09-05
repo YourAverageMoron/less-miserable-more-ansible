@@ -16,3 +16,4 @@
     - import_tasks: tasks/nvm.yml
     - import_tasks: tasks/gcp.yml
     - import_tasks: tasks/snowsql.yml
+    - import_tasks: tasks/rss.yml
