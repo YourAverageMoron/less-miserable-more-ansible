@@ -1,5 +1,4 @@
-- name: Ensure /opt/oracle
-  become: true
+- name: Ensure nom dir 
   file:
     dest: "~/.nom"
     state: directory
