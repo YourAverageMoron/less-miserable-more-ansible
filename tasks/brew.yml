@@ -25,6 +25,8 @@
       - "zoxide"
       - "cmake"
       - "kind"
+      - "websocat"
+      - "kcat"
     state: latest
   tags:
     - install
@@ -43,7 +45,7 @@
 
 - name: Install homebrew nvm packages
   homebrew:
-    name: ["nvm"]
+    name: ["nvm", "corepack"]
     state: latest
   tags:
     - install
@@ -105,12 +107,13 @@
       - "homebrew/cask/arc"
       - "homebrew/cask/obsidian"
       - "homebrew/cask/docker"
-      - "homebrew/cask/iterm2"
       - "homebrew/cask/postman"
       - "homebrew/cask/whatsapp"
       - "homebrew/cask/google-cloud-sdk"
       - "homebrew/cask/discord"
       - "homebrew/cask/slack"
+      - "homebrew/cask/alacritty"
+      - "homebrew/cask/rectangle"
       - "font-jetbrains-mono"
     state: latest
   tags:
