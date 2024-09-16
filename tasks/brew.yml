@@ -82,16 +82,16 @@
     - db
     - brew
 
-- name: Install homebrew cask packages
-  homebrew:
-    name:
-      - "homebrew/cask/snowflake-snowsql"
-    state: latest
-  tags:
-    - install
-    - cask
-    - brew
-    - db
+# - name: Install homebrew cask packages
+#   homebrew:
+#     name:
+#       - "homebrew/cask/snowflake-snowsql"
+#     state: latest
+#   tags:
+#     - install
+#     - cask
+#     - brew
+#     - db
 
 - name: Tap a Homebrew repository, for cask-fonts
   community.general.homebrew_tap:
@@ -108,10 +108,10 @@
       - "homebrew/cask/obsidian"
       - "homebrew/cask/docker"
       - "homebrew/cask/postman"
-      - "homebrew/cask/whatsapp"
-      - "homebrew/cask/google-cloud-sdk"
-      - "homebrew/cask/discord"
-      - "homebrew/cask/slack"
+      # - "homebrew/cask/whatsapp"
+      # - "homebrew/cask/google-cloud-sdk"
+      # - "homebrew/cask/discord"
+      # - "homebrew/cask/slack"
       - "homebrew/cask/alacritty"
       - "homebrew/cask/rectangle"
       - "font-jetbrains-mono"
