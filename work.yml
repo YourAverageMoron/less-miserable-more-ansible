@@ -8,7 +8,6 @@
     - import_tasks: tasks/ssh.yml
     - import_tasks: tasks/neovim.yml
     - import_tasks: tasks/dotfiles.yml
-    - import_tasks: tasks/python.yml
     - import_tasks: tasks/zsh.yml
     - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/rss.yml
