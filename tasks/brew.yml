@@ -93,13 +93,13 @@
 #     - brew
 #     - db
 
-- name: Tap a Homebrew repository, for cask-fonts
-  community.general.homebrew_tap:
-    name: homebrew/cask-fonts
-  tags:
-    - install
-    - cask
-    - brew
+# - name: Tap a Homebrew repository, for cask-fonts
+#   community.general.homebrew_tap:
+#     name: homebrew/cask-fonts
+#   tags:
+#     - install
+#     - cask
+#     - brew
 
 - name: Install homebrew cask packages
   homebrew:
@@ -114,7 +114,7 @@
       # - "homebrew/cask/slack"
       - "homebrew/cask/alacritty"
       - "homebrew/cask/rectangle"
-      - "font-jetbrains-mono"
+      # - "font-jetbrains-mono"
     state: latest
   tags:
     - install
