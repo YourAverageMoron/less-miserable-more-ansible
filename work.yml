@@ -11,3 +11,4 @@
     - import_tasks: tasks/zsh.yml
     - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/rss.yml
+    - import_tasks: tasks/nvm.yml
