@@ -115,6 +115,8 @@
       - "homebrew/cask/alacritty"
       - "homebrew/cask/rectangle"
       # - "font-jetbrains-mono"
+      - "homebrew/cask/insomnia"
+      - "homebrew/cask/lens"
     state: latest
   tags:
     - install
