@@ -11,7 +11,7 @@
 - name: Install homebrew packages
   homebrew:
     name: 
-      - "jandedobbeleer/oh-my-posh/oh-my-posh"
+      # - "jandedobbeleer/oh-my-posh/oh-my-posh"
       - "tree"
       - "tldr"
       - "tmux"
