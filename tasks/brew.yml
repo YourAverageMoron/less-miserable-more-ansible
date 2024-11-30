@@ -13,6 +13,7 @@
     name: 
       # - "jandedobbeleer/oh-my-posh/oh-my-posh"
       - "tree"
+      - "direnv"
       - "tldr"
       - "tmux"
       - "wireshark"
